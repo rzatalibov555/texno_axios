@@ -1,0 +1,13 @@
+.detailSide{
+    width: 100%;
+    min-height: calc(100% - 470px);
+    /* background: lightpink; */
+    float: left;
+    color: white;
+    padding: 40px 60px;
+    padding-top: 200px;
+}
+
+.detailSide p {
+    font-size: 25px;
+}

@@ -1,0 +1,103 @@
+body{
+  margin: 0 auto;
+  padding: 0px;
+}
+
+.main{
+  width: 100%;
+  height: 100vh;
+  /* background: grey; */
+  background-image: url('https://pyxis.nymag.com/v1/imgs/d69/e62/0f9387fe9e928c89ed0fde8cca2891f1e7-deadpool-wolverine.rhorizontal.w700.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: left;
+}
+
+.header{
+  width: 100%;
+  min-height: 70px;
+  /* background: red; */
+  float: left;
+  
+}
+/* ================================================== */
+.logo{
+  width: 100%;
+  min-height: 70px;
+  /* background: blue; */
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.logo img{
+  height: 50px;
+}
+
+/* ================================================== */
+
+
+
+/* ================================================== */
+.search{
+  width: 100%;
+  min-height: 70px;
+  /* background: green; */
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 10px;
+  color: white;
+  box-sizing: border-box;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  height: 10px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ED7701;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:#ED9004;
+}
+
+
+
+.swiper-container {
+  width: 100%;
+  height: 200px;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  width: 300px;
+  height: 200px;
+  background: fuchsia; /* Customize this color or gradient */
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

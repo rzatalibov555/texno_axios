@@ -1,0 +1,26 @@
+.list{
+    width: 100%;
+    min-height: 400px;
+    /* background: lightblue; */
+    float: left;
+    position: fixed;
+    bottom: 0px;
+    padding: 40px 60px;
+    box-sizing: border-box;
+    color: white;
+    
+}
+
+.list p {
+    font-size: 30px;
+}
+
+.Items{
+    width: 100%;
+    height: 220px;
+    /* background: green; */
+    display: flex;
+    overflow-x: auto; /* Allows horizontal scrolling */
+    white-space: nowrap; /* Prevents wrapping of items to the next line */
+    scroll-behavior: smooth; /* Smooth scroll effect */
+}
