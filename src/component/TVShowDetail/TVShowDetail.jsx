@@ -1,7 +1,7 @@
 import  './TVShowDetail.css'
 
 const TVShowDetail = ({tvShow}) => {
-    console.log(tvShow)
+    // console.log(tvShow)
     return(
         <div className='detailSide'>
             <h2>{tvShow.name}</h2>
