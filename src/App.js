@@ -9,8 +9,7 @@ import {TVShowAPI} from '../src/services/tv-shows.js'
 function App() {
 
   const [currentTVShow, setCurrentTVShow] = useState({})
-
-  // console.log(`${BASE_URL}${currentTVShow.backdrop_path}`)
+  const [tvRecomendations, setTvRecomendations] = useState([])
 
   async function fetchData(){
     try{
@@ -18,19 +17,38 @@ function App() {
       setCurrentTVShow(response)
     }catch(error){
       console.log(error.message)
-    }
-    
+    } 
   }
-
-
 
   useEffect(()=>{
     fetchData()
   },[])
 
 
+  // =====================================
+
+  async function fetchRecomendations(id){
+    try{
+      const response = await TVShowAPI.fetchRecomendations(id)
+      setTvRecomendations(response.data.results)
+      // console.log(response.data.results.slice(0,10))
+    }catch(error){
+      console.log(error.message)
+    } 
+  }
 
 
+  
+
+
+  useEffect(()=>{
+    fetchRecomendations(currentTVShow.id)
+  },[currentTVShow.id])
+
+
+  function update_current_show(idShow){
+    setCurrentTVShow(idShow)
+  }
 
 
   return (
@@ -58,7 +76,7 @@ function App() {
 
       <TVShowDetail tvShow={currentTVShow} />
 
-      <TVShowList/> 
+      <TVShowList tvRecomendations={tvRecomendations} onClickItem={update_current_show}/> 
 
 
     </div>

@@ -2,10 +2,14 @@
     width: 300px;
     height: 200px;
     background: grey;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
     border-radius: 5px;
     margin: 5px;
     flex: 0 0 auto; /* Prevents flex items from shrinking */
     position: relative;
+
 }
 
 .item_title{
